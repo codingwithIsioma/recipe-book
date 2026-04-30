@@ -1,175 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- Best Practice -->
-     <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>RecipeBook - Vanilla Cupcakes</title>
-</head>
-<body style="width:95%; margin:auto">
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <!-- Contains information on the recipe: name, description, prep time etc.-->
-        <br>
-        <header>
-            <h1>VANILLA CUPCAKES</h1>
-            <p>A simple vanilla cupcake for any occasion. It's moist, fluffy and delicious, you'll make them every week!</p>
-            <table border="1" style="width:100%" align="center">
-                <tr>
-                    <td><strong>Prep. time:</strong> 15mins</td>
-                    <td><strong>Cook time:</strong> 20mins</td>
-                    <td><strong>Servings:</strong> 16 cupcakes</td>
-                    <td><strong>Difficulty:</strong> Easy</td>
-                </tr>
-            </table>
-        </header>
+      <!-- Contains information on the recipe: name, description, prep time etc.-->
+      <header>
+        <div class="title-header">
+          <h1 class="title">Vanilla Cupcakes</h1>
+          <p class="tagline">
+            A simple vanilla cupcake for any occasion. It's moist, fluffy and
+            delicious, you'll make them every week!
+          </p>
+        </div>
+        <div class="recipe-information">
+          <div class="info-item">
+            <span class="stat">PREP TIME</span>
+            <span class="info">15 mins</span>
+          </div>
+          <div class="info-item">
+            <span class="stat">COOK TIME</span>
+            <span class="info">20 mins</span>
+          </div>
+          <div class="info-item">
+            <span class="stat">SERVINGS</span
+            ><span class="info">16 cupcakes</span>
+          </div>
+          <div class="info-item">
+            <span class="stat">DIFFICULTY</span>
+            <span class="info">Easy</span>
+          </div>
+        </div>
+      </header>
 
-        <!-- line breaks to give spacing between sections -->
-        <br>
+      <!-- Displays an image that visually represents the dish to be made and lists out the relevant ingredients for the dish -->
+      <section>
+        <img
+          src="./assets/vanilla-cupcake.jpeg"
+          alt="A vanilla cupcake with whipcream and raspberry ontop"
+          width="340px"
+          height="450px"
+          align="left"
+          hspace="35"
+          vspace="5"
+        />
+        <div>
+          <h2>INGREDIENTS LIST</h2>
+          <h3><u>For the Cupcakes:</u></h3>
+          <ul>
+            <li>1⅔ cup all-purpose flour <em>213g</em></li>
+            <li>1 cup granulated sugar <em>200g</em></li>
+            <li>¼ teaspoon baking soda</li>
+            <li>1½ teaspoon baking powder</li>
+            <li>¼ teaspoon kosher salt</li>
+            <li>¾ cup unsalted butter <em>170g, melted</em></li>
+            <li>3 egg whites <em>room temperature</em></li>
+            <li>1 tablespoon vanilla extract <em>15mL</em></li>
+            <li>½ cup sour cream <em>120mL, room temperature</em></li>
+            <li>½ cup whole milk <em>120mL, warm</em></li>
+          </ul>
+          <h3><u>For the Vanilla Buttercream:</u></h3>
+          <ul>
+            <li>2 pound confectioners sugar <em>900g, sifted</em></li>
+            <li>1 pound unsalted butter <em>450g, room temperature</em></li>
+            <li>1 teaspoon vanilla extract</li>
+            <li>1 tablespoon heavy cream</li>
+            <li>1 pinch kosher salt</li>
+            <li>1 tsp whole milk</li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Displays an image that visually represents the dish to be made and lists out the relevant ingredients for the dish -->
-        <section>
-            <img src="./assets/vanilla-cupcake.jpeg" alt="A vanilla cupcake with whipcream and raspberry ontop" width="340px" height="450px" align="left" hspace="35" vspace="5">
-            <div>
-                <h2>INGREDIENTS LIST</h2>
-                <h3><u>For the Cupcakes:</u></h3>
-                <ul>
-                    <li>1⅔ cup all-purpose flour <em>213g</em></li>
-                    <li>1 cup granulated sugar <em>200g</em></li>
-                    <li>¼ teaspoon baking soda</li>
-                    <li>1½ teaspoon baking powder</li>
-                    <li>¼ teaspoon kosher salt</li>
-                    <li>¾ cup unsalted butter <em>170g, melted</em></li>
-                    <li>3 egg whites <em>room temperature</em></li>
-                    <li>1 tablespoon vanilla extract <em>15mL</em></li>
-                    <li>½ cup sour cream <em>120mL, room temperature</em></li>
-                    <li>½ cup whole milk <em>120mL, warm</em></li>
-                </ul>
-                <h3><u>For the Vanilla Buttercream:</u></h3>
-                <ul>
-                    <li>2 pound confectioners sugar <em>900g, sifted</em></li>
-                    <li>1 pound unsalted butter <em>450g, room temperature</em></li>
-                    <li>1 teaspoon vanilla extract</li>
-                    <li>1 tablespoon heavy cream</li>
-                    <li>1 pinch kosher salt</li>
-                    <li>1 tsp whole milk</li>
-                </ul>
-            </div>
-        </section>
+      <!-- line breaks and horizontal line to give spacing between sections -->
+      <br />
+      <br />
+      <hr />
+      <br />
 
-        <!-- line breaks and horizontal line to give spacing between sections -->
-        <br>
-        <br>
-        <hr>
-        <br>
+      <!-- This section contains the step by step instruction on how to make the dish-->
+      <section>
+        <h2>INSTRUCTIONS</h2>
+        <h3><u>For the Cupcakes:</u></h3>
+        <ol>
+          <li>
+            Preheat oven to 350 degrees Fahrenhiet. Place cupcake papers in a
+            cupcake pan.
+          </li>
+          <li>
+            Sift the flour, sugar salt, baking soda and powder into a large
+            bowl, and whisk together.
+          </li>
+          <li>
+            Separate the eggs. You can use the yolks for a custard or a batch
+            French buttercream.
+          </li>
+          <li>
+            In another bowl, whisk together the wet ingredients until combined.
+            (The batter may be clumpy, do not worry!)
+          </li>
+          <li>
+            Add the wet ingredients to the dry ingredients. Mix until combined.
+          </li>
+          <li>
+            Distribute the batter evenly into cupcake papers, filling each paper
+            with about 2/3 the way up.
+          </li>
+          <li>
+            Bake for about 18 minutes or until centers are springy to the touch.
+          </li>
+        </ol>
+        <h3><u>For the Buttercream:</u></h3>
+        <ol>
+          <li>
+            In a stand mixer fitted with a paddle attachment, cream the room
+            temperature butter. Add in the confectioners sugar in two batches.
+            Add salt, milk, cream and vanilla. Mix until fluffy.
+          </li>
+          <li>Transfer to a piping bag.</li>
+          <li>Pipe a large dollop of buttercream on each cupcake.</li>
+        </ol>
+      </section>
 
-        <!-- This section contains the step by step instruction on how to make the dish-->
-        <section>
-            <h2>INSTRUCTIONS</h2>
-            <h3><u>For the Cupcakes:</u></h3>
-            <ol>
-                <li>Preheat oven to 350 degrees Fahrenhiet. Place cupcake papers in a cupcake pan.</li>
-                <li>Sift the flour, sugar salt, baking soda and powder into a large bowl, and whisk together.</li>
-                <li>Separate the eggs. You can use the yolks for a custard or a batch French buttercream.</li>
-                <li>In another bowl, whisk together the wet ingredients until combined. (The batter may be clumpy, do not worry!)</li>
-                <li>Add the wet ingredients to the dry ingredients. Mix until combined.</li>
-                <li>Distribute the batter evenly into cupcake papers, filling each paper with about 2/3 the way up.</li>
-                <li>Bake for about 18 minutes or until centers are springy to the touch.</li>
-            </ol>
-            <h3><u>For the Buttercream:</u></h3>
-            <ol>
-                <li>In a stand mixer fitted with a paddle attachment, cream the room temperature butter. Add in the confectioners sugar in
-                two batches. Add salt, milk, cream and vanilla. Mix until fluffy.</li>
-                <li>Transfer to a piping bag.</li>
-                <li>Pipe a large dollop of buttercream on each cupcake.</li>
-            </ol>
-        </section>
+      <!-- line breaks and horizontal line to give spacing between sections -->
+      <br />
+      <hr />
+      <br />
 
-        <!-- line breaks and horizontal line to give spacing between sections -->
-        <br>
-        <hr>
-        <br>
+      <!-- Uses a table element to display nutriition information on the dish-->
+      <section>
+        <h2>NUTRITION FACTS</h2>
+        <table border="1" style="width: 80%">
+          <tr align="right">
+            <th>Nutrient</th>
+            <th>Amount per Serving</th>
+          </tr>
+          <tr align="left">
+            <td>Calories</td>
+            <td>624<em>kcal</em></td>
+          </tr>
+          <tr align="left">
+            <td>Carbohydrates</td>
+            <td>80<em>g</em></td>
+          </tr>
+          <tr align="left">
+            <td>Protein</td>
+            <td>3<em>g</em></td>
+          </tr>
+          <tr align="left">
+            <td>Saturated Fat</td>
+            <td>21<em>g</em></td>
+          </tr>
+          <tr align="left">
+            <td>Monounsaturated Fat</td>
+            <td>9<em>g</em></td>
+          </tr>
+          <tr align="left">
+            <td>Cholestorol</td>
+            <td>90<em>mg</em></td>
+          </tr>
+          <tr align="left">
+            <td>Sodium</td>
+            <td>116<em>mg</em></td>
+          </tr>
+          <tr align="left">
+            <td>Fiber</td>
+            <td>0.4<em>g</em></td>
+          </tr>
+          <tr align="left">
+            <td>Sugar</td>
+            <td>69<em>g</em></td>
+          </tr>
+          <tr align="left">
+            <td>Vitamin A</td>
+            <td>1046<em>IU</em></td>
+          </tr>
+        </table>
+      </section>
 
-        <!-- Uses a table element to display nutriition information on the dish-->
-        <section>
-            <h2>NUTRITION FACTS</h2>
-            <table border="1" style="width:80%;">
-                <tr align="right">
-                    <th>Nutrient</th>
-                    <th>Amount per Serving</th>
-                </tr>
-                <tr align="left">
-                    <td>Calories</td>
-                    <td>624<em>kcal</em></td>
-                </tr>
-                <tr align="left">
-                    <td>Carbohydrates</td>
-                    <td>80<em>g</em></td>
-                </tr>
-                <tr align="left">
-                    <td>Protein</td>
-                    <td>3<em>g</em></td>
-                </tr>
-                <tr align="left">
-                    <td>Saturated Fat</td>
-                    <td>21<em>g</em></td>
-                </tr>
-                <tr align="left">
-                    <td>Monounsaturated Fat</td>
-                    <td>9<em>g</em></td>
-                </tr>
-                <tr align="left">
-                    <td>Cholestorol</td>
-                    <td>90<em>mg</em></td>
-                </tr>
-                <tr align="left">
-                    <td>Sodium</td>
-                    <td>116<em>mg</em></td>
-                </tr>
-                <tr align="left">
-                    <td>Fiber</td>
-                    <td>0.4<em>g</em></td>
-                </tr>
-                <tr align="left">
-                    <td>Sugar</td>
-                    <td>69<em>g</em></td>
-                </tr>
-                <tr align="left">
-                    <td>Vitamin A</td>
-                    <td>1046<em>IU</em></td>
-                </tr>
-            </table>
-        </section>
+      <!-- line breaks and horizontal line to give spacing between sections -->
+      <br />
+      <br />
+      <hr />
+      <br />
 
-        <!-- line breaks and horizontal line to give spacing between sections -->
-        <br>
-        <br>
-        <hr>
-        <br>
+      <!-- Displays notes/tips from the author of the recipe and gives credit to the author -->
+      <section>
+        <fieldset>
+          <legend><strong>TIPS</strong></legend>
+          <ul>
+            <li>
+              <strong>Feel free to modify this frosting recipe!</strong> I
+              especially love to make these cupcakes with a dollop of Italian
+              meringue buttercream on top as it's less sweet and lighter
+              (tasting not calories) than American buttercream or other frosting
+              options.
+            </li>
+            <li>
+              <strong>Measure your flour correctly!</strong> Adding too much
+              flour to the recipe is the most common mistake. The best and
+              easiest way to measure flour is by using a scale. If you don't
+              have one, then fluff your flour with a spoon, sprinkle it into
+              your measuring cup, and use a knife to level it off.
+            </li>
+            <li>
+              <strong
+                >Towards the end of the baking time, I keep a close eye on the
+                oven.</strong
+              >
+              Once the centers are springy and a toothpick comes out clean, the
+              cupcakes are ready. Being watchful at the end lessens the chances
+              of having caramelized dark edges on your cupcake, ensuring it's
+              light, soft, and moist!
+            </li>
+          </ul>
+        </fieldset>
 
-        <!-- Displays notes/tips from the author of the recipe and gives credit to the author -->
-        <section>
-            <fieldset>
-                <legend><strong>TIPS</strong></legend>
-                <ul>
-                    <li><strong>Feel free to modify this frosting recipe!</strong> I especially love to make these cupcakes with a dollop of Italian meringue buttercream on top as it's less sweet and lighter (tasting not calories) than American buttercream or other frosting
-                options.</li>
-                    <li><strong>Measure your flour correctly!</strong> Adding too much flour to the recipe is the most common mistake. The best and easiest way to measure flour is by using a scale. If you don't have one, then fluff your flour with a spoon, sprinkle it into your measuring cup, and use a knife
-                    to level it off.</li>
-                    <li><strong>Towards the end of the baking time, I keep a close eye on the oven.</strong> Once the centers are springy and a toothpick comes out clean, the cupcakes are ready. Being watchful at the end lessens the chances of having caramelized dark edges on your cupcake, ensuring it's light, soft, and moist!</li>
-                </ul>
-            </fieldset>
+        <br />
 
-            <br>
-
-            <p align="right">Adapted from <a href="https://preppykitchen.com/moist-vanilla-cupcake-recipe/#recipe" target="_blank">Preppy Kitchen</a></p>
-        </section>
+        <p align="right">
+          Adapted from
+          <a
+            href="https://preppykitchen.com/moist-vanilla-cupcake-recipe/#recipe"
+            target="_blank"
+            >Preppy Kitchen</a
+          >
+        </p>
+      </section>
     </main>
 
-    <br>
+    <br />
 
     <!-- Added feature: Recommends another recipe that a user might want to see and redirects to a different page -->
     <footer>
-        <p><strong>YOU MAY ALSO LIKE:</strong> <a href="./recommend.html" target="_blank">Chocolate Brownies</a></p>
+      <p>
+        <strong>YOU MAY ALSO LIKE:</strong>
+        <a href="./recommend.html" target="_blank">Chocolate Brownies</a>
+      </p>
     </footer>
-</body>
+  </body>
 </html>
