@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #faf8f4;
+    --header-color: #1e1e1e;
+    --primary-color: #2c2c2c;
+    --secondary-color: #c8956c;
+    --tagline: #888;
+    --instruction-text: #3a3a3a;
+    --note-text: #555;
+    --divider-lines: #e0d9ce;
+    --border-lines: #f0ebe3;
+    --box-background: #fff;
+    --main-font: Lato, san-serif;
+    --header-font: "Playfair Display", serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+
+/* MOBILE-FIRST DESIGN */
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* Header Information */
+
+/* Title and tagline */
+.title-header {
+    border-left: 4px solid var(--secondary-color);
+    margin: 2rem 0;
+    padding: 0 1.2rem;
+}
+
+h1 {
+    color: var(--header-color);
+    font-family: var(--header-font);
+    font-size: 2rem;
+}
+
+.tagline {
+    color: var(--tagline);
+    font-family: var(--header-font);
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* Recipe Information */
+.recipe-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--box-background);
+    border-radius: 5px;
+    border: 1px solid var(--divider-lines);
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    border-right: 1px solid var(--divider-lines);
+    border-bottom: 1px solid var(--divider-lines);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.9rem 0;
+}
+/* Removes the extra border lines from the right and bottom of the 2nd, 3rd and 4th cells respectively*/
+.info-item:nth-child(2n) {
+    border-right: none;
+}
+
+.info-item:nth-child(4n), .info-item:nth-child(3n) {
+    border-bottom: none;
+}
+
+.stat {
+    color: var(--secondary-color);
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.info {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+
+
+
+/* TABLETS/LAPTOPS VIEW */
+@media screen and (min-width: 768px) {
+    main {
+        width: 80vw;
+    }
+    
+    h1 {
+        font-size: 2.625rem;
+    }
+
+    .tagline {
+        font-size: 0.9375rem;
+    }
+
+    .recipe-information {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Remove extra border from bottom from the 1st and 2nd cells and Add border to the right of 2nd cell */
+    .info-item:nth-child(1n), .info-item:nth-child(2n) {
+        border-bottom: none;
+    }
+
+    .info-item:nth-child(2n) {
+        border-right: 1px solid var(--divider-lines);
+    }
+
+    .stat {
+        font-size: 0.625rem;
+    }
+
+    .info {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        width: 50vw;
+    }
+}
