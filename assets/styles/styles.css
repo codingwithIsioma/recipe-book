@@ -285,6 +285,53 @@ tbody td:nth-child(even) {
   font-size: 0.7rem;
 }
 
+/* Tips box */
+.tip-box {
+  margin: 1.5rem 0;
+  background-color: var(--box-background);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-lines);
+  border-left: 4px solid var(--secondary-color);
+}
+
+.tip-items {
+  color: var(--note-text);
+  font-size: 0.812rem;
+}
+
+.tip-items li {
+  padding: 0.5rem;
+  border-bottom: 2px dotted var(--border-lines);
+}
+
+.tip-items li:last-child {
+  border-bottom: none;
+}
+
+.tip-items li::marker {
+  content: "-";
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+.tip-items span {
+  font-weight: 700;
+}
+
+.source {
+  text-align: end;
+  font-size: 0.688rem;
+  font-style: italic;
+  font-family: var(--header-font);
+  color: var(--attribution-text);
+}
+
+.source a {
+  color: var(--attribution-text);
+  cursor: pointer;
+}
+
 /* TABLETS/LAPTOPS VIEW */
 @media screen and (min-width: 768px) {
   main {
@@ -369,6 +416,15 @@ tbody td:nth-child(even) {
 
   tbody td {
     font-size: 0.89rem;
+  }
+
+  /* Tips Box */
+  .tip-items {
+    font-size: 0.89rem;
+  }
+
+  .source {
+    font-size: 0.938rem;
   }
 }
 
