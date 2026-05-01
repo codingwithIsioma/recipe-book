@@ -230,10 +230,59 @@ h3 {
   font-size: 0.6rem;
   font-weight: 700;
 }
-
+/* target the list element first to hover on it but the effect should only be on the before content */
 .instruction-items li:hover::before {
   transform: scale(1.2);
   background-color: var(--tagline);
+}
+
+/* Nutrition facts */
+#nutrition-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+thead th {
+  background-color: var(--primary-color);
+  color: var(--box-background);
+  padding: 0.7rem;
+  text-align: left;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+thead th:nth-child(1) {
+  border-top-left-radius: 6px;
+}
+
+thead th:nth-child(2) {
+  border-top-right-radius: 6px;
+  border-left: 1px solid var(--primary-color);
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--border-lines);
+}
+
+tbody tr:nth-child(10) {
+  border-bottom: none;
+}
+
+tbody td {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.812rem;
+}
+
+tbody td:nth-child(even) {
+  font-weight: 700;
+  text-align: end;
+}
+
+.unit {
+  font-style: italic;
+  font-size: 0.7rem;
 }
 
 /* TABLETS/LAPTOPS VIEW */
@@ -311,6 +360,15 @@ h3 {
 
   .instruction-items li::before {
     font-size: 0.7rem;
+  }
+
+  /* Nutrition Facts */
+  thead th {
+    font-size: 0.68rem;
+  }
+
+  tbody td {
+    font-size: 0.89rem;
   }
 }
 
