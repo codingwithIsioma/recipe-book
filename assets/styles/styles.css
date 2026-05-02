@@ -187,7 +187,7 @@ h3 {
   font-family: var(--main-font);
 }
 
-.ingredient-items > li > em {
+.ingredient-items > li > span {
   font-weight: 300;
   font-size: 0.65rem;
 }
@@ -211,6 +211,7 @@ h3 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  line-height: 1.5;
   gap: 0.7rem;
   cursor: pointer;
   transition: transform 0.8s ease-out;
@@ -305,6 +306,7 @@ tbody td:nth-child(even) {
 
 .tip-items li {
   padding: 0.5rem 0;
+  line-height: 1.5;
   border-bottom: 2px dotted var(--border-lines);
 }
 
