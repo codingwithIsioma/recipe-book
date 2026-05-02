@@ -192,6 +192,10 @@ h3 {
   font-size: 0.65rem;
 }
 
+.rec-ingredients {
+  margin-top: 1rem;
+}
+
 /* Instruction list */
 .instruction-items {
   list-style: none;
@@ -224,6 +228,10 @@ h3 {
   color: #fff;
   font-size: 0.6rem;
   font-weight: 700;
+}
+
+.rec-instructions {
+  margin-top: 1rem;
 }
 
 /* Nutrition facts */
@@ -319,6 +327,10 @@ tbody td:nth-child(even) {
 .source a {
   color: var(--attribution-text);
   cursor: pointer;
+}
+
+.rec-source {
+  padding-bottom: 0.5rem;
 }
 
 /* Footer */
