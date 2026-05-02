@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/6a9f6daa92.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
@@ -187,7 +191,7 @@
       </section>
 
       <!-- Displays notes/tips from the author of the recipe and gives credit to the author -->
-      <section>
+      <section id="tip-section">
         <h2>
           <div class="bullet"></div>
           Tips
@@ -234,9 +238,13 @@
 
     <!-- Added feature: Recommends another recipe that a user might want to see and redirects to a different page -->
     <footer>
+      <div class="footer-divider"></div>
       <p>
-        <strong>YOU MAY ALSO LIKE:</strong>
-        <a href="./recommend.html" target="_blank">Chocolate Brownies</a>
+        YOU MAY ALSO LIKE:
+        <a href="./recommend.html" target="_blank"
+          >CHOCOLATE BROWNIES
+          <i id="nav-arrow" class="fa-solid fa-arrow-right"></i
+        ></a>
       </p>
     </footer>
   </body>

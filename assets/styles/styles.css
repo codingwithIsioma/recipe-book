@@ -23,7 +23,6 @@
   --border-lines: #f0ebe3;
   --box-background: #fff;
   --hover-background-1: #f5f0e8;
-  --hover-background-2: #fff3ec;
   --main-font: Lato, san-serif;
   --header-font: "Playfair Display", serif;
 }
@@ -193,10 +192,6 @@ h3 {
   font-size: 0.65rem;
 }
 
-.ingredient-items > li:hover {
-  background-color: var(--hover-background-1);
-}
-
 /* Instruction list */
 .instruction-items {
   list-style: none;
@@ -229,11 +224,6 @@ h3 {
   color: #fff;
   font-size: 0.6rem;
   font-weight: 700;
-}
-/* target the list element first to hover on it but the effect should only be on the before content */
-.instruction-items li:hover::before {
-  transform: scale(1.2);
-  background-color: var(--tagline);
 }
 
 /* Nutrition facts */
@@ -281,15 +271,19 @@ tbody td:nth-child(even) {
 }
 
 .unit {
-  font-style: italic;
   font-size: 0.7rem;
 }
 
 /* Tips box */
+#tip-section {
+  margin-bottom: 1rem;
+}
+
 .tip-box {
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
   background-color: var(--box-background);
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.2rem;
   border-radius: 6px;
   border: 1px solid var(--border-lines);
   border-left: 4px solid var(--secondary-color);
@@ -298,21 +292,16 @@ tbody td:nth-child(even) {
 .tip-items {
   color: var(--note-text);
   font-size: 0.812rem;
+  list-style: none;
 }
 
 .tip-items li {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   border-bottom: 2px dotted var(--border-lines);
 }
 
 .tip-items li:last-child {
   border-bottom: none;
-}
-
-.tip-items li::marker {
-  content: "-";
-  color: var(--secondary-color);
-  font-size: 1.5rem;
 }
 
 .tip-items span {
@@ -330,6 +319,36 @@ tbody td:nth-child(even) {
 .source a {
   color: var(--attribution-text);
   cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.footer-divider {
+  width: 100%;
+  border-bottom: 1px solid var(--divider-lines);
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 0.7rem;
+  padding: 0.7rem 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+footer p > a {
+  color: var(--secondary-color);
+}
+
+#nav-arrow {
+  color: var(--secondary-color);
+  font-size: 0.65rem;
+  transition: transform 0.3s ease-out;
 }
 
 /* TABLETS/LAPTOPS VIEW */
@@ -424,12 +443,44 @@ tbody td:nth-child(even) {
   }
 
   .source {
-    font-size: 0.938rem;
+    font-size: 0.812rem;
+  }
+
+  /* Footer */
+  footer {
+    width: 80vw;
+  }
+
+  footer p {
+    font-size: 0.812rem;
+  }
+
+  #nav-arrow {
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main {
     width: 50vw;
+  }
+
+  footer {
+    width: 50vw;
+  }
+
+  /* hover effects for only desktops/laptops */
+  .ingredient-items > li:hover {
+    background-color: var(--hover-background-1);
+  }
+
+  /* target the list element first to hover on it but the effect should only be on the before content */
+  .instruction-items li:hover::before {
+    transform: scale(1.2);
+    background-color: var(--tagline);
+  }
+
+  footer p > a:hover #nav-arrow {
+    transform: translateX(5px);
   }
 }
